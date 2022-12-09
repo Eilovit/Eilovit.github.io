@@ -1,4 +1,4 @@
-# 静态网站My_site
+# 3.静态网站My_site
 
 # 一.hugo config:
 
@@ -23,6 +23,7 @@
 
 <image src="/static.jpeg">
 
-
+# 四.主题链接
+# __[Hugo主题链接](https://hugoloveit.com/zh-cn/theme-documentation-basics/)__
 
 

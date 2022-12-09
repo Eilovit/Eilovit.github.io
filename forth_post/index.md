@@ -1,4 +1,4 @@
-# Linux NOTES
+# 2.Linux NOTES
 
 # Linux notes
 ## this work use lots of codes that we learn in class.
