@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Linux NOTES - My New Hugo Site</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="Linux NOTES" />
+<meta property="og:description" content="Linux notes this work use lots of codes that we learn in class. #Follows are some examples:
+vim的基本操作 WHEN I CRAETE THE SOCKET WORK I USE SOME VIM CODES.
+1 创建vim VIM &hellip;
+CAN CREATE A VIM.
+2 光速入门 h ,j ,k ,l 左，下、上、右
+w 跳到下一个单词
+e 跳到下一个单词尾部
+b 跳到上一个单词（标点符号不包含在单词内）
+B 跳到上一个单词（标点符号也包含在单词内）
+x 删除光标所在字符
+i 插入
+Esc 退出插入
+:w 保存
+:q 退出
+:q! 强制退出（不保存文件）
+3 命令模式基本操作 操作类型 操作按键 功能 删除 x 删除光标处的单个字符 dd 删除当前光标所在行 #dd 删除从光标处开始的#行内容 替换 r 替换单个字符 R 替换多个字符 复制 yy 复制光标所在行的内容到剪贴板 #yy 复制从光标处开始的#行内容 粘贴 p 将缓冲区中的内容粘贴到光标位置处的下一行 P 粘贴到光标位置处之前 翻页 Ctrl&#43;F 向下翻动一整页内容 Ctrl&#43;B 向上翻动一整页内容 行内快速跳转 数字“0” 跳转至行首 “$&ldquo;键 跳转到行尾 行间快速跳转 gg 跳转到文件的首行 G 跳转到文件的末尾行 #gg 跳转到文件中的第#行 行号显示 :set nu 在编辑器中显示行号 :set nonu 取消编辑器中的行号显示 其他 /word 从上而下在文件中查找字符串&quot;word&rdquo; n 定位下一个匹配的被查找字符串 N 定位上一个匹配的被查找字符串 u 按一次取消最近的一次操作多次重复按u键，恢复已进行的多步操作 4 底行模式基本操作 操作类型 操作按键 功能 保存文件 :w 保存文件 :w/root/newfile 另存为其它文件 退出vi :q 未修改退出 :q!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Eilovit.github.io/forth_post/" /><meta property="og:image" content="https://Eilovit.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-08T18:27:35+08:00" />
+<meta property="article:modified_time" content="2022-12-08T18:27:35+08:00" /><meta property="og:site_name" content="My cool site" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://Eilovit.github.io/logo.png"/>
+
+<meta name="twitter:title" content="Linux NOTES"/>
+<meta name="twitter:description" content="Linux notes this work use lots of codes that we learn in class. #Follows are some examples:
+vim的基本操作 WHEN I CRAETE THE SOCKET WORK I USE SOME VIM CODES.
+1 创建vim VIM &hellip;
+CAN CREATE A VIM.
+2 光速入门 h ,j ,k ,l 左，下、上、右
+w 跳到下一个单词
+e 跳到下一个单词尾部
+b 跳到上一个单词（标点符号不包含在单词内）
+B 跳到上一个单词（标点符号也包含在单词内）
+x 删除光标所在字符
+i 插入
+Esc 退出插入
+:w 保存
+:q 退出
+:q! 强制退出（不保存文件）
+3 命令模式基本操作 操作类型 操作按键 功能 删除 x 删除光标处的单个字符 dd 删除当前光标所在行 #dd 删除从光标处开始的#行内容 替换 r 替换单个字符 R 替换多个字符 复制 yy 复制光标所在行的内容到剪贴板 #yy 复制从光标处开始的#行内容 粘贴 p 将缓冲区中的内容粘贴到光标位置处的下一行 P 粘贴到光标位置处之前 翻页 Ctrl&#43;F 向下翻动一整页内容 Ctrl&#43;B 向上翻动一整页内容 行内快速跳转 数字“0” 跳转至行首 “$&ldquo;键 跳转到行尾 行间快速跳转 gg 跳转到文件的首行 G 跳转到文件的末尾行 #gg 跳转到文件中的第#行 行号显示 :set nu 在编辑器中显示行号 :set nonu 取消编辑器中的行号显示 其他 /word 从上而下在文件中查找字符串&quot;word&rdquo; n 定位下一个匹配的被查找字符串 N 定位上一个匹配的被查找字符串 u 按一次取消最近的一次操作多次重复按u键，恢复已进行的多步操作 4 底行模式基本操作 操作类型 操作按键 功能 保存文件 :w 保存文件 :w/root/newfile 另存为其它文件 退出vi :q 未修改退出 :q!"/>
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://Eilovit.github.io/forth_post/" /><link rel="prev" href="https://Eilovit.github.io/first_post/" /><link rel="next" href="https://Eilovit.github.io/third_post/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Linux NOTES",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/Eilovit.github.io\/forth_post\/"
+        },"genre": "posts","wordcount":  158 ,
+        "url": "https:\/\/Eilovit.github.io\/forth_post\/","datePublished": "2022-12-08T18:27:35+08:00","dateModified": "2022-12-08T18:27:35+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "CZY"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="My New Hugo Site"></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="My New Hugo Site"></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Linux NOTES</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="Eilovit.github.io" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>CZY</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-08">2022-12-08</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;158 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#this-work-use-lots-of-codes-that-we-learn-in-class">this work use lots of codes that we learn in class.</a>
+      <ul>
+        <li><a href="#vim的基本操作">vim的基本操作</a></li>
+      </ul>
+    </li>
+    <li><a href="#1-创建vim">1 创建vim</a></li>
+    <li><a href="#2-光速入门">2 光速入门</a></li>
+    <li><a href="#3-命令模式基本操作">3 命令模式基本操作</a></li>
+    <li><a href="#4-底行模式基本操作">4 底行模式基本操作</a></li>
+    <li><a href="#5-各种模式的转换">5 各种模式的转换</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="linux-notes">Linux notes</h1>
+<h2 id="this-work-use-lots-of-codes-that-we-learn-in-class">this work use lots of codes that we learn in class.</h2>
+<p>#Follows are some examples:</p>
+<h3 id="vim的基本操作">vim的基本操作</h3>
+<p>WHEN I CRAETE THE SOCKET WORK I USE SOME VIM CODES.</p>
+<h2 id="1-创建vim">1 创建vim</h2>
+<p>VIM &hellip;</p>
+<p>CAN CREATE A VIM.</p>
+<h2 id="2-光速入门">2 光速入门</h2>
+<p>h ,j ,k ,l  左，下、上、右</p>
+<p>w 跳到下一个单词</p>
+<p>e 跳到下一个单词尾部</p>
+<p>b 跳到上一个单词（标点符号不包含在单词内）</p>
+<p>B 跳到上一个单词（标点符号也包含在单词内）</p>
+<p>x 删除光标所在字符</p>
+<p>i 插入</p>
+<p>Esc 退出插入</p>
+<p>:w 保存</p>
+<p>:q 退出</p>
+<p>:q! 强制退出（不保存文件）</p>
+<h2 id="3-命令模式基本操作">3 命令模式基本操作</h2>
+<table>
+<thead>
+<tr>
+<th>操作类型</th>
+<th>操作按键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>删除</td>
+<td>x</td>
+<td>删除光标处的单个字符</td>
+</tr>
+<tr>
+<td></td>
+<td>dd</td>
+<td>删除当前光标所在行</td>
+</tr>
+<tr>
+<td></td>
+<td>#dd</td>
+<td>删除从光标处开始的#行内容</td>
+</tr>
+<tr>
+<td>替换</td>
+<td>r</td>
+<td>替换单个字符</td>
+</tr>
+<tr>
+<td></td>
+<td>R</td>
+<td>替换多个字符</td>
+</tr>
+<tr>
+<td>复制</td>
+<td>yy</td>
+<td>复制光标所在行的内容到剪贴板</td>
+</tr>
+<tr>
+<td></td>
+<td>#yy</td>
+<td>复制从光标处开始的#行内容</td>
+</tr>
+<tr>
+<td>粘贴</td>
+<td>p</td>
+<td>将缓冲区中的内容粘贴到光标位置处的下一行</td>
+</tr>
+<tr>
+<td></td>
+<td>P</td>
+<td>粘贴到光标位置处之前</td>
+</tr>
+<tr>
+<td>翻页</td>
+<td>Ctrl+F</td>
+<td>向下翻动一整页内容</td>
+</tr>
+<tr>
+<td></td>
+<td>Ctrl+B</td>
+<td>向上翻动一整页内容</td>
+</tr>
+<tr>
+<td>行内快速跳转</td>
+<td>数字“0”</td>
+<td>跳转至行首</td>
+</tr>
+<tr>
+<td></td>
+<td>“$&ldquo;键</td>
+<td>跳转到行尾</td>
+</tr>
+<tr>
+<td>行间快速跳转</td>
+<td>gg</td>
+<td>跳转到文件的首行</td>
+</tr>
+<tr>
+<td></td>
+<td>G</td>
+<td>跳转到文件的末尾行</td>
+</tr>
+<tr>
+<td></td>
+<td>#gg</td>
+<td>跳转到文件中的第#行</td>
+</tr>
+<tr>
+<td>行号显示</td>
+<td>:set nu</td>
+<td>在编辑器中显示行号</td>
+</tr>
+<tr>
+<td></td>
+<td>:set nonu</td>
+<td>取消编辑器中的行号显示</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>/word</td>
+<td>从上而下在文件中查找字符串&quot;word&rdquo;</td>
+</tr>
+<tr>
+<td></td>
+<td>n</td>
+<td>定位下一个匹配的被查找字符串</td>
+</tr>
+<tr>
+<td></td>
+<td>N</td>
+<td>定位上一个匹配的被查找字符串</td>
+</tr>
+<tr>
+<td></td>
+<td>u</td>
+<td>按一次取消最近的一次操作多次重复按u键，恢复已进行的多步操作</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-底行模式基本操作">4 底行模式基本操作</h2>
+<table>
+<thead>
+<tr>
+<th>操作类型</th>
+<th>操作按键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>保存文件</td>
+<td>:w</td>
+<td>保存文件</td>
+</tr>
+<tr>
+<td></td>
+<td>:w/root/newfile</td>
+<td>另存为其它文件</td>
+</tr>
+<tr>
+<td>退出vi</td>
+<td>:q</td>
+<td>未修改退出</td>
+</tr>
+<tr>
+<td></td>
+<td>:q!</td>
+<td>放弃对文件内容的修改，并退出vi</td>
+</tr>
+<tr>
+<td>保存文件退出vi</td>
+<td>r</td>
+<td>:wq</td>
+</tr>
+<tr>
+<td>其他操作</td>
+<td>:e ~/install.log</td>
+<td>打开新的文件进行编辑</td>
+</tr>
+<tr>
+<td></td>
+<td>:s/old/new</td>
+<td>将当前行中查找到的第一个字符“old”串替换为&quot;new&quot;</td>
+</tr>
+<tr>
+<td></td>
+<td>:s/old/new/g</td>
+<td>将当前行中查找到的所有字符串“old”替换为&quot;new&quot;</td>
+</tr>
+<tr>
+<td></td>
+<td>:#,#s/old/new/g</td>
+<td>在行号“#，#”范围内替换所有的字符串&quot;old&quot;为&quot;new&quot;</td>
+</tr>
+<tr>
+<td></td>
+<td>:%s/old/new/g</td>
+<td>在整个文件范围内替换所有的字符串“old”为&quot;new&quot;</td>
+</tr>
+<tr>
+<td></td>
+<td>:s/old/new/c</td>
+<td>在替换命令末尾加入c命令，将对每个替换动作提示用户进行确认</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5-各种模式的转换">5 各种模式的转换</h2>
+<image src="/vim.jpeg">
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-12-08</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/forth_post/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://Eilovit.github.io/forth_post/" data-title="Linux NOTES" data-via="xxxx"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://Eilovit.github.io/forth_post/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://Eilovit.github.io/forth_post/" data-title="Linux NOTES"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://Eilovit.github.io/forth_post/" data-title="Linux NOTES"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://Eilovit.github.io/forth_post/" data-title="Linux NOTES"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/first_post/" class="prev" rel="prev" title="Socket实验"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Socket实验</a>
+            <a href="/third_post/" class="next" rel="next" title="GITHUB">GITHUB<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.108.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="Eilovit.github.io" target="_blank">CZY</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
